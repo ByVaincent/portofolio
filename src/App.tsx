@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import "./App.css";
+import Menu from "./components/Menu";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,48 +17,16 @@ function App() {
 
   return (
     <div className="app-container">
-      <button
-        className={`menu-toggle-outside${isMenuOpen ? " open" : ""}`}
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        aria-label="Toggle menu"
-      >
-        <span></span>
-        <span></span>
-      </button>
-
-      {isMenuOpen && (
-        <nav className="main-nav floating-menu">
-          <ul>
-            <li>
-              <button
-                onClick={() => scrollToSection(whoAmIRef)}
-                className="active"
-              >
-                Who am i
-              </button>
-            </li>
-            <li>
-              <button onClick={() => scrollToSection(projectsRef)}>
-                Projects
-              </button>
-            </li>
-            <li>
-              <button onClick={() => scrollToSection(softSkillsRef)}>
-                Soft skills
-              </button>
-            </li>
-            <li>
-              <button onClick={() => scrollToSection(aboutMeRef)}>
-                A little more
-              </button>
-            </li>
-            <li>
-              <button onClick={() => scrollToSection(docsRef)}>Docs</button>
-            </li>
-          </ul>
-        </nav>
-      )}
-
+      <Menu
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        scrollToSection={scrollToSection}
+        whoAmIRef={whoAmIRef}
+        projectsRef={projectsRef}
+        softSkillsRef={softSkillsRef}
+        aboutMeRef={aboutMeRef}
+        docsRef={docsRef}
+      />
       <main className="main-content">
         <section ref={whoAmIRef} className="section" id="who-am-i">
           <h1>Who am I</h1>
