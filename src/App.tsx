@@ -1,52 +1,78 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 
 function App() {
-  const homeRef = useRef<HTMLDivElement>(null);
-  const aboutRef = useRef<HTMLDivElement>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const whoAmIRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
-  const contactRef = useRef<HTMLDivElement>(null);
+  const softSkillsRef = useRef<HTMLDivElement>(null);
+  const aboutMeRef = useRef<HTMLDivElement>(null);
+  const docsRef = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
+    setIsMenuOpen(false);
   };
 
   return (
     <div className="app-container">
-      <nav className="main-nav">
-        <ul>
-          <li>
-            <button onClick={() => scrollToSection(homeRef)}>Accueil</button>
-          </li>
-          <li>
-            <button onClick={() => scrollToSection(aboutRef)}>À propos</button>
-          </li>
-          <li>
-            <button onClick={() => scrollToSection(projectsRef)}>
-              Projets
-            </button>
-          </li>
-          <li>
-            <button onClick={() => scrollToSection(contactRef)}>Contact</button>
-          </li>
-        </ul>
-      </nav>
+      <button
+        className={`menu-toggle-outside${isMenuOpen ? " open" : ""}`}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        aria-label="Toggle menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      {isMenuOpen && (
+        <nav className="main-nav floating-menu">
+          <ul>
+            <li>
+              <button
+                onClick={() => scrollToSection(whoAmIRef)}
+                className="active"
+              >
+                Who am i
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection(projectsRef)}>
+                Projects
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection(softSkillsRef)}>
+                Soft skills
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection(aboutMeRef)}>
+                A little more
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection(docsRef)}>Docs</button>
+            </li>
+          </ul>
+        </nav>
+      )}
 
       <main className="main-content">
-        <section ref={homeRef} className="section" id="home">
-          <h1>Accueil</h1>
+        <section ref={whoAmIRef} className="section" id="who-am-i">
+          <h1>Who am I</h1>
         </section>
-
-        <section ref={aboutRef} className="section" id="about">
-          <h2>À propos</h2>
-        </section>
-
         <section ref={projectsRef} className="section" id="projects">
-          <h2>Projets</h2>
+          <h2>Projects</h2>
         </section>
-
-        <section ref={contactRef} className="section" id="contact">
-          <h2>Contact</h2>
+        <section ref={softSkillsRef} className="section" id="soft-skills">
+          <h2>Soft skills</h2>
+        </section>
+        <section ref={aboutMeRef} className="section" id="about-me">
+          <h2>A little more about me</h2>
+        </section>
+        <section ref={docsRef} className="section" id="docs">
+          <h2>Docs</h2>
         </section>
       </main>
     </div>
