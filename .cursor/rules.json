@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Utiliser Tailwind pour tous les styles",
+    "rule": "Évite les styles inline ou CSS personnalisé si Tailwind peut faire le travail.",
+    "example": {
+      "bad": "<div style={{ marginTop: '20px' }}></div>",
+      "good": "<div className='mt-5'></div>"
+    }
+  },
+  {
+    "name": "Utilise des classes utilitaires cohérentes",
+    "rule": "Garde une hiérarchie logique : padding > couleur > typo > layout.",
+    "note": "Ex : 'p-4 text-gray-700 font-medium flex flex-col'"
+  },
+  {
+    "name": "Composants UI réutilisables",
+    "rule": "Tout composant visuel (Card, Button...) doit être isolé dans `components/` et stylisé avec Tailwind.",
+    "example": {
+      "bad": "<button className='bg-blue-500 ...'></button>",
+      "good": "<PrimaryButton>Envoyer</PrimaryButton>"
+    }
+  },
+  {
+    "name": "Accessibilité des boutons et liens",
+    "rule": "Les éléments interactifs doivent avoir `aria-label` si pas de texte lisible.",
+    "example": {
+      "bad": "<button><ArrowIcon /></button>",
+      "good": "<button aria-label='Suivant'><ArrowIcon /></button>"
+    }
+  },
+  {
+    "name": "Contraste suffisant des textes",
+    "rule": "Assure-toi que la couleur du texte respecte les critères WCAG (min AA pour les textes normaux).",
+    "note": "Évite par exemple du gris clair sur fond blanc."
+  },
+  {
+    "name": "Utilise Prettier + ESLint",
+    "rule": "Tout fichier doit être auto-formaté avant commit avec Prettier.",
+    "note": "Ajoute un hook `pre-commit` si besoin."
+  },
+  {
+    "name": "Nommage clair des composants",
+    "rule": "Tous les composants React doivent être en PascalCase.",
+    "example": {
+      "bad": "function headerMenu() {}",
+      "good": "function HeaderMenu() {}"
+    }
+  },
+  {
+    "name": "Hooks toujours en haut du composant",
+    "rule": "Place tous les hooks React (`useState`, `useEffect`, etc.) au début du composant.",
+    "example": {
+      "bad": "if (show) { const [open, setOpen] = useState(false); }",
+      "good": "const [open, setOpen] = useState(false); if (show) { ... }"
+    }
+  },
+  {
+    "name": "Structure de projet claire",
+    "rule": "Organise les fichiers dans `components/`, `pages/`, `hooks/`, `assets/`, `utils/`.",
+    "note": "Facilite la maintenance et la navigation dans le code."
+  },
+  {
+    "name": "Pas de `any` en TypeScript",
+    "rule": "Évite le type `any`, préfère des types explicites ou `unknown`.",
+    "example": {
+      "bad": "const handle = (data: any) => {}",
+      "good": "const handle = (data: UserData) => {}"
+    }
+  }
+]
