@@ -1,3 +1,56 @@
+/* Menu Toggle Button (en dehors du menu) */
+.menu-toggle-outside {
+  position: sticky;
+  top: 1.2rem;
+  left: 1.2rem;
+  z-index: 1100;
+  width: 48px;
+  height: 48px;
+  background: none;
+  border: 2px solid #3c4487;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+.menu-toggle-outside span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #3c4487;
+  margin: 3px 0;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.menu-toggle-outside.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle-outside.open span:nth-child(2) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Menu vertical flottant */
+.floating-menu {
+  position: fixed;
+  top: 70px;
+  left: 1.2rem;
+  min-width: 180px;
+  width: max-content;
+  background: linear-gradient(135deg, #23264d 60%, #23264dcc 100%);
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  z-index: 1099;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  animation: fadeInMenu 0.25s;
+  height: auto;
+}
 @keyframes fadeInMenu {
   from {
     opacity: 0;
@@ -9,9 +62,31 @@
   }
 }
 
-.menu-toggle-outside.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+.floating-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
 }
-.menu-toggle-outside.open span:nth-child(2) {
-  transform: rotate(-45deg) translate(5px, -5px);
+.floating-menu li {
+  width: 100%;
+}
+.floating-menu button {
+  background: none;
+  border: none;
+  color: #bfc6e6;
+  font-size: 1.1rem;
+  font-family: inherit;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0.2rem 0;
+  transition: color 0.2s;
+  font-weight: 400;
+}
+.floating-menu button.active,
+.floating-menu button:focus,
+.floating-menu button:hover {
+  color: #fff;
+  font-weight: 700;
 }

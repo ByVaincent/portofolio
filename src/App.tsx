@@ -1,6 +1,11 @@
 import { useRef, useState } from "react";
 import "./App.css";
 import Menu from "./components/Menu";
+import WhoAmI from "./components/WhoAmI";
+import Projects from "./components/Projects";
+import SoftSkills from "./components/SoftSkills";
+import AboutMe from "./components/AboutMe";
+import Docs from "./components/Docs";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="app-container">
+    <div className="app-container container relative">
       <Menu
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
@@ -28,21 +33,11 @@ function App() {
         docsRef={docsRef}
       />
       <main className="main-content">
-        <section ref={whoAmIRef} className="section" id="who-am-i">
-          <h1>Who am I</h1>
-        </section>
-        <section ref={projectsRef} className="section" id="projects">
-          <h2>Projects</h2>
-        </section>
-        <section ref={softSkillsRef} className="section" id="soft-skills">
-          <h2>Soft skills</h2>
-        </section>
-        <section ref={aboutMeRef} className="section" id="about-me">
-          <h2>A little more about me</h2>
-        </section>
-        <section ref={docsRef} className="section" id="docs">
-          <h2>Docs</h2>
-        </section>
+        <WhoAmI ref={whoAmIRef} />
+        <Projects ref={projectsRef} />
+        <SoftSkills ref={softSkillsRef} />
+        <AboutMe ref={aboutMeRef} />
+        <Docs ref={docsRef} />
       </main>
     </div>
   );
