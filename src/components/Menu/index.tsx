@@ -33,6 +33,7 @@ const Menu: React.FC<MenuProps> = ({
       >
         <span className="block w-6 h-[3px] bg-[#23264d] my-[3px] rounded transition-all"></span>
         <span className="block w-6 h-[3px] bg-[#23264d] my-[3px] rounded transition-all"></span>
+        <span className="block w-6 h-[3px] bg-[#23264d] my-[3px] rounded transition-all"></span>
       </button>
       {isMenuOpen && (
         <nav className="main-nav floating-menu fixed top-20 left-5 min-w-[180px] w-max bg-gradient-to-br from-[#23264d] to-[#23264dcc] text-white rounded-2xl shadow-2xl p-6 z-40 flex flex-col items-start animate-fadeInMenu">

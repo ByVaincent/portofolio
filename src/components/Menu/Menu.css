@@ -26,10 +26,13 @@
   transition: all 0.3s;
 }
 .menu-toggle-outside.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(6px, 6px);
 }
 .menu-toggle-outside.open span:nth-child(2) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  opacity: 0;
+}
+.menu-toggle-outside.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* Menu vertical flottant */
