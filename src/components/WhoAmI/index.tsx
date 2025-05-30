@@ -1,15 +1,18 @@
 import "./WhoAmI.css";
 import Section from "../ui/Section";
+import React, { forwardRef } from "react";
 
-const WhoAmI = () => {
+interface WhoAmIProps {}
+
+const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
   return (
-    <Section classSup="mt-8" id={"#whoami"}>
+    <Section classSup="" id="whoami" ref={ref}>
       <h2>Who am I</h2>
       <h3>Vincent Jacquelin</h3>
       <p>
-        I’m currently completing a six-month internship at Liv-n, an innovative
+        I'm currently completing a six-month internship at Liv-n, an innovative
         startup in the real estate management sector, as part of my final
-        project for a Bachelor’s-level (Bac +3/4) web development degree. I
+        project for a Bachelor's-level (Bac +3/4) web development degree. I
         joined the team with a real challenge: learning PHP and the CodeIgniter
         framework (v3 & v4) on my own in order to contribute to their fullstack
         project — a challenge all the more exciting as I had just finished a
@@ -19,13 +22,15 @@ const WhoAmI = () => {
         development of their application, using React Native for both Android
         and iOS platforms. My passion for programming began during an initial
         training in web design. Since then, my interest in interface design and
-        smooth user experiences has only grown. That’s why today, I’m looking to
+        smooth user experiences has only grown. That's why today, I'm looking to
         join a tech team in the Lyon area as a frontend developer. Driven,
         self-taught, and team-oriented, I put just as much care into writing
         clean code as I do into building strong, positive relationships.
       </p>
     </Section>
   );
-};
+});
+
+WhoAmI.displayName = "WhoAmI";
 
 export default WhoAmI;

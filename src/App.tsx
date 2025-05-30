@@ -16,29 +16,42 @@ function App() {
   const docsRef = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+    if (ref.current) {
+      const menuHeight = 80; // Hauteur approximative du menu en pixels
+      const elementPosition = ref.current.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - menuHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
     setIsMenuOpen(false);
   };
 
   return (
-    <div className="app-container container relative">
-      <Menu
-        isMenuOpen={isMenuOpen}
-        setIsMenuOpen={setIsMenuOpen}
-        scrollToSection={scrollToSection}
-        whoAmIRef={whoAmIRef}
-        projectsRef={projectsRef}
-        softSkillsRef={softSkillsRef}
-        aboutMeRef={aboutMeRef}
-        docsRef={docsRef}
-      />
-      <main className="main-content">
-        <WhoAmI ref={whoAmIRef} />
-        <Projects ref={projectsRef} />
-        <SoftSkills ref={softSkillsRef} />
-        <AboutMe ref={aboutMeRef} />
-        <Docs ref={docsRef} />
-      </main>
+    <div className="relative">
+      <div className="h-20 flex">
+        <Menu
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          scrollToSection={scrollToSection}
+          whoAmIRef={whoAmIRef}
+          projectsRef={projectsRef}
+          softSkillsRef={softSkillsRef}
+          aboutMeRef={aboutMeRef}
+          docsRef={docsRef}
+        />
+      </div>
+      <div className="max-w-5xl mx-auto">
+        <main className="max-w-3xl mx-auto">
+          <WhoAmI ref={whoAmIRef} />
+          <Projects ref={projectsRef} />
+          <SoftSkills ref={softSkillsRef} />
+          <AboutMe ref={aboutMeRef} />
+          <Docs ref={docsRef} />
+        </main>
+      </div>
     </div>
   );
 }

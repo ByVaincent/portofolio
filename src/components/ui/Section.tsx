@@ -1,19 +1,20 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const Section = ({
-  children,
-  classSup,
-  id,
-}: {
-  children: React.ReactNode;
-  classSup: string;
-  id: string;
-}) => {
+const Section = forwardRef<
+  HTMLElement,
+  {
+    children: React.ReactNode;
+    classSup: string;
+    id: string;
+  }
+>(({ children, classSup, id }, ref) => {
   return (
-    <section className={classSup} id={id}>
+    <section className={classSup} id={id} ref={ref}>
       {children}
     </section>
   );
-};
+});
+
+Section.displayName = "Section";
 
 export default Section;
