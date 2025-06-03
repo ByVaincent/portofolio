@@ -1,13 +1,41 @@
 import "./WhoAmI.css";
 import Section from "../ui/Section";
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
+import linkedin from "../../../public/linkedin_logo.svg";
+import github from "../../../public/git_hub_logo_white.png";
+import jsLogo from "../../../public/js_logo.svg";
+import tsLogo from "../../../public/ts_logo.svg";
+import reactLogo from "../../../public/react_logo.svg";
+import reactNativeLogo from "../../../public/reactnative_logo.svg";
+import nodeLogo from "../../../public/nodejs_logo.svg";
+import mongoDbLogo from "../../../public/mongodb_icon.svg";
+import htmlLogo from "../../../public/html5_logo.svg";
+import cssLogo from "../../../public/Css3logo_2.svg";
 
 interface WhoAmIProps {}
 
 const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
   return (
     <Section classSup="" id="whoami" ref={ref}>
-      <h2>Who am I</h2>
+      <div className="flex justify-between items-center flex-wrap">
+        <h2>Who am I</h2>
+        <div className="flex items-center gap-4">
+          <a href="https://www.codewars.com/users/ByVaincent">
+            <img
+              src="https://www.codewars.com/users/ByVaincent/badges/micro"
+              alt="logo codewars"
+              className="w-40"
+            />
+          </a>
+          <a href="https://github.com/ByVaincent">
+            <img src={github} alt="logo github" className="w-30" />
+          </a>
+          <a href="https://www.linkedin.com/in/vincent-jacquelin-12074a2b8/">
+            <img src={linkedin} alt="logo linkedin" className="h-10" />
+          </a>
+        </div>
+      </div>
+
       <h3>Vincent Jacquelin</h3>
       <p>
         I'm currently completing a six-month internship at Liv-n, an innovative
@@ -27,6 +55,16 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
         self-taught, and team-oriented, I put just as much care into writing
         clean code as I do into building strong, positive relationships.
       </p>
+      <div className="flex gap-3 w-100 mt-5">
+        <img src={jsLogo} alt="" className="w-1/8" />
+        <img src={tsLogo} alt="" className="w-1/8" />
+        <img src={reactLogo} alt="" className="w-1/8" />
+        <img src={reactNativeLogo} alt="" className="w-1/8" />
+        <img src={nodeLogo} alt="" className="w-1/8" />
+        <img src={mongoDbLogo} alt="" className="w-1/8" />
+        <img src={htmlLogo} alt="" className="w-1/8" />
+        <img src={cssLogo} alt="" className="w-1/10" />
+      </div>
     </Section>
   );
 });

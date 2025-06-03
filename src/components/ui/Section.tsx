@@ -9,7 +9,7 @@ const Section = forwardRef<
   }
 >(({ children, classSup, id }, ref) => {
   return (
-    <section className={classSup} id={id} ref={ref}>
+    <section className={"mt-10 " + { classSup }} id={id} ref={ref}>
       {children}
     </section>
   );
