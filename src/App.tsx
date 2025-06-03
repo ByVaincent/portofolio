@@ -43,15 +43,14 @@ function App() {
           docsRef={docsRef}
         />
       </div>
-      <div className="max-w-5xl mx-auto">
-        <main className="max-w-3xl mx-auto">
-          <WhoAmI ref={whoAmIRef} />
-          <Projects ref={projectsRef} />
-          <SoftSkills ref={softSkillsRef} />
-          <AboutMe ref={aboutMeRef} />
-          <Docs ref={docsRef} />
-        </main>
-      </div>
+
+      <main className="max-w-4xl mx-auto">
+        <WhoAmI ref={whoAmIRef} />
+        <Projects ref={projectsRef} />
+        <SoftSkills ref={softSkillsRef} />
+        <AboutMe ref={aboutMeRef} />
+        <Docs ref={docsRef} />
+      </main>
     </div>
   );
 }

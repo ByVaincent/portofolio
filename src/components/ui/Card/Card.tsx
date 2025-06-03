@@ -10,16 +10,22 @@ interface CardProps {
 
 const Card = ({ imgSrc, title, tech, text, link }: CardProps): ReactElement => {
   return (
-    <a href="">
-      <div className="card w-[320px] border-2 rounded-xl p-4">
-        <div className="w-full flex justify-center items-center h-50">
-          <img src={imgSrc} alt="" />
+    <div className="w-full sm:w-1/2 md:w-1/3 px-2 mb-5">
+      <a href={link} target="_blank" className=" ">
+        <div className="card  border-2 rounded-xl p-4">
+          <div className="w-full flex justify-center items-center h-50">
+            <img
+              src={imgSrc}
+              alt=""
+              className={imgSrc === "/public/fake-trip.png" ? "h-[70%]" : ""}
+            />
+          </div>
+          <h3>{title}</h3>
+          <h4>{tech}</h4>
+          <p>{text}</p>
         </div>
-        <h3>{title}</h3>
-        <h4>{tech}</h4>
-        <p>{text}</p>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 };
 
