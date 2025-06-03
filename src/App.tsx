@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="relative">
-      <div className="h-20 flex">
+      <div className="h-10 flex">
         <Menu
           isMenuOpen={isMenuOpen}
           setIsMenuOpen={setIsMenuOpen}

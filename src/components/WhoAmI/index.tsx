@@ -16,7 +16,7 @@ interface WhoAmIProps {}
 
 const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
   return (
-    <Section classSup="" id="whoami" ref={ref}>
+    <Section classSup="w-full" id="whoami" ref={ref}>
       <div className="flex justify-between items-center flex-wrap">
         <h2>Who am I</h2>
         <div className="flex items-center gap-4">
@@ -55,15 +55,31 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
         self-taught, and team-oriented, I put just as much care into writing
         clean code as I do into building strong, positive relationships.
       </p>
-      <div className="flex gap-3 w-100 mt-5">
-        <img src={jsLogo} alt="" className="w-1/8" />
-        <img src={tsLogo} alt="" className="w-1/8" />
-        <img src={reactLogo} alt="" className="w-1/8" />
-        <img src={reactNativeLogo} alt="" className="w-1/8" />
-        <img src={nodeLogo} alt="" className="w-1/8" />
-        <img src={mongoDbLogo} alt="" className="w-1/8" />
-        <img src={htmlLogo} alt="" className="w-1/8" />
-        <img src={cssLogo} alt="" className="w-1/10" />
+      <div className="flex flex-wrap">
+        <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <img src={jsLogo} alt="" className="w-full  p-2" />
+        </div>
+        <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <img src={tsLogo} alt="" className="w-full  p-2" />
+        </div>
+        <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <img src={reactLogo} alt="" className="w-full  p-2" />
+        </div>
+        <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <img src={reactNativeLogo} alt="" className="w-full  p-2" />
+        </div>
+        <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <img src={nodeLogo} alt="" className="w-full  p-2" />
+        </div>
+        <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <img src={mongoDbLogo} alt="" className="w-full  p-2" />
+        </div>
+        <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <img src={htmlLogo} alt="" className="w-full  p-2" />
+        </div>
+        <div className="w-1/5 sm:w-1/9 flex justify-between items-center">
+          <img src={cssLogo} alt="" className="w-full  p-2" />
+        </div>
       </div>
     </Section>
   );
