@@ -55,7 +55,7 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
         self-taught, and team-oriented, I put just as much care into writing
         clean code as I do into building strong, positive relationships.
       </p>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap mt-5">
         <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
           <img src={jsLogo} alt="" className="w-full  p-2" />
         </div>
