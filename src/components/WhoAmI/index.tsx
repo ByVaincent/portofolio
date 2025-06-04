@@ -24,36 +24,35 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <div className=" justify-between items-center flex-wrap">
-          <h2>Who I am</h2>
-          <div className="flex justify-between  mb-5 px-5">
-            <div className="">
-              <h3>Vincent Jacquelin</h3>
-              <div className="flex items-center gap-4 mt-5 flex-wrap">
-                <a href="https://www.codewars.com/users/ByVaincent">
-                  <img
-                    src="https://www.codewars.com/users/ByVaincent/badges/micro"
-                    alt="logo codewars"
-                    className="w-40"
-                  />
-                </a>
-                <a href="https://github.com/ByVaincent">
-                  <img src={github} alt="logo github" className="w-30" />
-                </a>
-                <a href="https://www.linkedin.com/in/vincent-jacquelin-12074a2b8/">
-                  <img src={linkedin} alt="logo linkedin" className="h-10" />
-                </a>
-              </div>
-            </div>
-            <div className="w-[200px] aspect-square rounded-full overflow-hidden border-2border-[#3c4487]pt-2">
-              <img
-                src="/pict.png"
-                alt="Photo de Vincent Jacquelin"
-                className="w-full h-full object-cover object-center"
-              />
+        <div className="flex justify-between  mb-5 sm:px-5">
+          <div className="">
+            <h2>Who I am</h2>
+            <h3>Vincent Jacquelin</h3>
+            <div className="flex items-center gap-4 mt-5 flex-wrap">
+              <a href="https://www.codewars.com/users/ByVaincent">
+                <img
+                  src="https://www.codewars.com/users/ByVaincent/badges/micro"
+                  alt="logo codewars"
+                  className="w-40"
+                />
+              </a>
+              <a href="https://github.com/ByVaincent">
+                <img src={github} alt="logo github" className="w-30" />
+              </a>
+              <a href="https://www.linkedin.com/in/vincent-jacquelin-12074a2b8/">
+                <img src={linkedin} alt="logo linkedin" className="h-10" />
+              </a>
             </div>
           </div>
+          <div className="w-20 sm:w-40 aspect-square rounded-full overflow-hidden ">
+            <img
+              src="/pict.png"
+              alt="Photo de Vincent Jacquelin"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
         </div>
+
         <p>
           I'm currently completing a six-month internship at Liv-n, an
           innovative startup in the real estate management sector, as part of my
