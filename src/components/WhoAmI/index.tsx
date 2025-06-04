@@ -42,8 +42,16 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
             </a>
           </div>
         </div>
-
-        <h3>Vincent Jacquelin</h3>
+        <div className="flex justify-between items-center my-7 px-5">
+          <h3>Vincent Jacquelin</h3>
+          <div className="w-[200px] aspect-square rounded-full overflow-hidden border-2border-[#3c4487]pt-2">
+            <img
+              src="/pict.png"
+              alt="Photo de Vincent Jacquelin"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+        </div>
         <p>
           I'm currently completing a six-month internship at Liv-n, an
           innovative startup in the real estate management sector, as part of my
