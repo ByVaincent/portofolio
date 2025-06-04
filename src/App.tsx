@@ -30,19 +30,18 @@ function App() {
   };
 
   return (
-    <div className="relative">
-      <div className="h-10 flex">
-        <Menu
-          isMenuOpen={isMenuOpen}
-          setIsMenuOpen={setIsMenuOpen}
-          scrollToSection={scrollToSection}
-          whoAmIRef={whoAmIRef}
-          projectsRef={projectsRef}
-          softSkillsRef={softSkillsRef}
-          aboutMeRef={aboutMeRef}
-          docsRef={docsRef}
-        />
-      </div>
+    <div className="relative flex flex-col items-center">
+      <div className="h-10 w-full"></div>
+      <Menu
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        scrollToSection={scrollToSection}
+        whoAmIRef={whoAmIRef}
+        projectsRef={projectsRef}
+        softSkillsRef={softSkillsRef}
+        aboutMeRef={aboutMeRef}
+        docsRef={docsRef}
+      />
 
       <main className="max-w-4xl mx-auto">
         <WhoAmI ref={whoAmIRef} />

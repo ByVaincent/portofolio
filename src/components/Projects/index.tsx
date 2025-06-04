@@ -31,7 +31,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
             text={
               "An individual technical test completed in two and a half days, featuring a user interface, a backend, and two APIs. I really enjoyed building this web application during my training. I also loved implementing a search and pagination system that I coded entirely from scratch."
             }
-            link={"test-technique-marvel.netlify.app"}
+            link={"https://test-technique-marvel.netlify.app/"}
           />
           <Card
             imgSrc={quizMeUpLogo}
@@ -49,7 +49,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
             text={
               "In charge of the mobile app’s frontend development just a few weeks into my internship! A challenge I truly enjoy, pushing me to give the best of myself. The app will be available soon."
             }
-            link={""}
+            link={"https://precious-pastelito-540861.netlify.app/"}
           />
         </div>
       </div>
