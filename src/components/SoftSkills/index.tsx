@@ -11,13 +11,13 @@ const SoftSkills = forwardRef<HTMLDivElement, SoftSkillsProps>((props, ref) => {
       <div className="flex flex-col justify-between flex-wrap">
         <h2>Soft skills</h2>
         <div className="flex flex-wrap gap-2 mt-5">
+          <Tag text="Creativity" />
           <Tag text="Teamwork" />
           <Tag text="Communication" />
+          <Tag text="Motivation" />
           <Tag text="Adaptability" />
           <Tag text="Problem-solving" />
-          <Tag text="Time management" />
           <Tag text="Proactivity" />
-          <Tag text="Creativity" />
           <Tag text="Organization" />
         </div>
       </div>

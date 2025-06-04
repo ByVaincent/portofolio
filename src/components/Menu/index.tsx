@@ -43,7 +43,7 @@ const Menu: React.FC<MenuProps> = ({
                 onClick={() => scrollToSection(whoAmIRef)}
                 className="active text-white font-bold w-full text-left py-1 px-0 hover:text-white focus:text-white"
               >
-                Who am i
+                Who I am
               </button>
             </li>
             <li className="w-full">

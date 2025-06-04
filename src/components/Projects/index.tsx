@@ -14,7 +14,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
     <Section classSup="" id="whoami" ref={ref}>
       <div className="w-full">
         <h2>Projects</h2>
-        <div className="flex flex-row flex-wrap mt-7  overflow-scroll">
+        <div className="flex flex-row flex-wrap mt-7 ">
           <Card
             imgSrc={livNLogo}
             title={"Mobile app Liv-n frontend"}

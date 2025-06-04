@@ -18,7 +18,7 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
   return (
     <Section classSup="w-full" id="whoami" ref={ref}>
       <div className="flex justify-between items-center flex-wrap">
-        <h2>Who am I</h2>
+        <h2>Who I am</h2>
         <div className="flex items-center gap-4">
           <a href="https://www.codewars.com/users/ByVaincent">
             <img
