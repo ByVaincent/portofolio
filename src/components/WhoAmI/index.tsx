@@ -10,6 +10,8 @@ import reactLogo from "../../../public/react_logo.svg";
 import reactNativeLogo from "../../../public/reactnative_logo.svg";
 import nodeLogo from "../../../public/nodejs_logo.svg";
 import mongoDbLogo from "../../../public/mongodb_icon.svg";
+import phpLogo from "../../../public/php.svg";
+import cilogo from "../../../public/codeIgniter.svg";
 import htmlLogo from "../../../public/html5_logo.svg";
 import cssLogo from "../../../public/Css3logo_2.svg";
 
@@ -28,7 +30,7 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
           <div className="">
             <h2>Who I am</h2>
             <h3>Vincent Jacquelin</h3>
-            <div className="flex items-center gap-4 mt-5 flex-wrap">
+            <div className="flex items-center gap-4 mt-5 flex-wrap w-2/2 sm:w-full">
               <a href="https://www.codewars.com/users/ByVaincent">
                 <img
                   src="https://www.codewars.com/users/ByVaincent/badges/micro"
@@ -44,11 +46,11 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
               </a>
             </div>
           </div>
-          <div className="w-20 sm:w-40 aspect-square rounded-full overflow-hidden ">
+          <div className="w-1/2 md:w-1/4 h-full aspect-square rounded-full overflow-hidden ">
             <img
               src="/pict.png"
               alt="Photo de Vincent Jacquelin"
-              className="w-full h-full object-cover object-center"
+              className=""
             />
           </div>
         </div>
@@ -74,28 +76,34 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
         </p>
 
         <div className="flex flex-wrap mt-5">
-          <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
             <img src={jsLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
             <img src={tsLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
             <img src={reactLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
             <img src={reactNativeLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
             <img src={nodeLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
+            <img src={phpLogo} alt="" className="w-full p-2" />
+          </div>
+          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
+            <img src={cilogo} alt="" className="w-full p-2" />
+          </div>
+          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
             <img src={mongoDbLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/4 sm:w-1/8 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
             <img src={htmlLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/5 sm:w-1/9 flex justify-between items-center">
+          <div className="w-1/6 sm:w-1/11 flex justify-between items-center">
             <img src={cssLogo} alt="" className="w-full p-2" />
           </div>
         </div>
