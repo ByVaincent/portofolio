@@ -34,8 +34,8 @@
 
 /* Menu vertical flottant */
 .floating-menu {
-  position: fixed;
-  top: 70px;
+  position: relative;
+  top: 40px;
   left: 1.2rem;
   min-width: 180px;
   width: max-content;
