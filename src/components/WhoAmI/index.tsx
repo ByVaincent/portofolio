@@ -17,7 +17,7 @@ import cssLogo from "../../../public/Css3logo_2.svg";
 
 interface WhoAmIProps {}
 
-const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
+const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((_props, ref) => {
   return (
     <Section classSup="w-full" id="whoami" ref={ref}>
       <motion.div
@@ -47,11 +47,17 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((props, ref) => {
             </div>
           </div>
           <div className="w-1/2 md:w-1/4 h-full aspect-square rounded-full overflow-hidden ">
-            <img
-              src="/pict.png"
-              alt="Photo de Vincent Jacquelin"
-              className=""
-            />
+            <a
+              href="../../../public/pict.png"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/pict.png"
+                alt="Photo de Vincent Jacquelin"
+                className=""
+              />
+            </a>
           </div>
         </div>
 

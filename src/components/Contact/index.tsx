@@ -1,11 +1,11 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import "./Contact.css";
 
 interface ContactProps {
   className?: string;
 }
 
-const Contact = forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
+const Contact = forwardRef<HTMLDivElement, ContactProps>((_props, ref) => {
   return (
     <section
       ref={ref}

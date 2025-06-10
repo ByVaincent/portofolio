@@ -9,7 +9,7 @@ import livNLogo from "../../../public/logo-liv-n.png";
 
 interface ProjectsProps {}
 
-const Projects = forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
+const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
   return (
     <Section classSup="" id="whoami" ref={ref}>
       <div className="w-full">
