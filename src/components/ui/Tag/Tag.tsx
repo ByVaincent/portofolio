@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import "./Tag.css";
+import "./tag.css";
 
 interface TagProps {
   text: string;
