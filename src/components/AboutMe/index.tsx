@@ -23,10 +23,10 @@ const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((_props, ref) => {
           I discovered coding during an initial web design course, and quickly
           realized it sparked the same passion I found in music: structured
           learning, creativity, and technical mastery. After teaching myself the
-          basics, I joined Le Réacteur (RNCP 6) for a full-time training program
-          I personally financed. Since then, I’ve been thriving in the tech
-          world — building interfaces, solving problems, creating components,
-          and improving user experience every day.
+          basics, I joined Le Réacteur (RNCP 6) for a full-time training
+          program. Since then, I’ve been thriving in the tech world — building
+          interfaces, solving problems, creating components, and improving user
+          experience every day.
         </p>
         <p className="mt-5">
           My path has shaped me into someone who embraces challenges, enjoys
