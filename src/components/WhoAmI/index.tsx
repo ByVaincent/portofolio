@@ -14,6 +14,7 @@ import phpLogo from "../../../public/php.svg";
 import cilogo from "../../../public/codeIgniter.svg";
 import htmlLogo from "../../../public/html5_logo.svg";
 import cssLogo from "../../../public/Css3logo_2.svg";
+import gitLogo from "../../../public/git.svg";
 
 interface WhoAmIProps {}
 
@@ -65,52 +66,70 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((_props, ref) => {
           I'm currently completing a six-month internship at Liv-n, an
           innovative startup in the real estate management sector, as part of my
           final project for a Bachelor's-level (Bac +3/4) web development
-          degree. I joined the team with a real challenge: learning PHP and the
-          CodeIgniter framework (v3 & v4) on my own in order to contribute to
-          their fullstack project — a challenge all the more exciting as I had
-          just finished a React training program, which I personally financed
-          through a loan and completed with Le Réacteur. Impressed by my
-          dedication and abilities, the team at Liv-n later entrusted me with
-          the frontend mobile development of their application, using React
-          Native for both Android and iOS platforms. My passion for programming
-          began during an initial training in web design. Since then, my
-          interest in interface design and smooth user experiences has only
-          grown. That's why today, I'm looking to join a tech team in the Lyon
-          area as a frontend developer. Driven, self-taught, and team-oriented,
-          I put just as much care into writing clean code as I do into building
-          strong, positive relationships.
+          degree.
+        </p>
+        <br />
+        <p>
+          {" "}
+          I joined the team with a real challenge: learning{" "}
+          <span className="strong">PHP</span> and the CodeIgniter framework (v3
+          & v4) on my own in order to contribute to their fullstack project — a
+          challenge all the more exciting as I had just finished a{" "}
+          <span className="strong">React</span> training program, which I{" "}
+          <span className="strong"> personally financed</span> through a loan
+          and completed with Le Réacteur. Impressed by my dedication and
+          abilities, the team at Liv-n later entrusted me with the{" "}
+          <span className="strong">frontend mobile development</span> of their
+          application, using <span className="strong">React Native</span> for
+          both Android and iOS platforms.{" "}
+        </p>
+        <br />
+        <p>
+          My passion for programming began during an initial training in web
+          design. Since then, my interest in interface design and smooth user
+          experiences has only grown. That's why today, I'm looking to join a
+          tech team in the Lyon area as a{" "}
+          <span className="strong">fullstack</span> developer.{" "}
+          <span className="strong">Driven</span>,
+          <span className="strong">self-taught</span>, and{" "}
+          <span className="strong">team-oriented</span>, I put just as much care
+          into writing clean code as I do into building strong, positive
+          relationships.
         </p>
 
         <div className="flex flex-wrap mt-5">
-          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
             <img src={jsLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
             <img src={tsLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
             <img src={reactLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
             <img src={reactNativeLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
             <img src={nodeLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
             <img src={phpLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
             <img src={cilogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
             <img src={mongoDbLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/5 sm:w-1/10 flex justify-between items-center">
+          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
             <img src={htmlLogo} alt="" className="w-full p-2" />
           </div>
-          <div className="w-1/6 sm:w-1/11 flex justify-between items-center">
+          <div className="w-1/6 sm:w-1/13 flex justify-between items-center">
             <img src={cssLogo} alt="" className="w-full p-2" />
+          </div>
+          <div className="w-1/6 sm:w-1/11 flex justify-between items-center">
+            <img src={gitLogo} alt="" className="w-full p-2" />
           </div>
         </div>
       </motion.div>
