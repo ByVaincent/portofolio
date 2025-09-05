@@ -22,7 +22,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
             text={
               "In charge of the mobile app’s frontend development just a few weeks into my internship! A challenge I truly enjoy, pushing me to give the best of myself. The app will be available soon."
             }
-            link={""}
+            link={"https://www.liv-n.com/"}
           />
           <Card
             imgSrc={marvelLogo}
@@ -47,7 +47,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
             title={"Mobile app Liv-n frontend"}
             tech={"React native - Expo Go"}
             text={
-              "In charge of the mobile app’s frontend development just a few weeks into my internship! A challenge I truly enjoy, pushing me to give the best of myself. The app will be available soon."
+              "A simple frontend exercise using HTML and CSS, where I recreated the TripAdvisor website."
             }
             link={"https://precious-pastelito-540861.netlify.app/"}
           />
