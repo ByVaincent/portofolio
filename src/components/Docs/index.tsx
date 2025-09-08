@@ -16,7 +16,7 @@ const Docs = forwardRef<HTMLDivElement, DocsProps>((_props, ref) => {
           rel="noopener noreferrer"
         >
           <button className="downloadCv p-5 border-2 rounded-md w-50 ">
-            Download my CV
+            CV download
           </button>
         </a>
       </div>
