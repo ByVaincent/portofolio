@@ -6,11 +6,19 @@ interface CardProps {
   tech: string;
   text: string;
   link: string;
+  moreClass?: string;
 }
 
-const Card = ({ imgSrc, title, tech, text, link }: CardProps): ReactElement => {
+const Card = ({
+  imgSrc,
+  title,
+  tech,
+  text,
+  link,
+  moreClass,
+}: CardProps): ReactElement => {
   return (
-    <div className="w-full sm:w-1/2 md:w-1/3 px-2 mb-5">
+    <div className={"w-full sm:w-1/2 md:w-1/3 px-2 mb-5" + moreClass}>
       <a href={link} target="_blank" rel="noopener noreferrer">
         <div className="card  border-2 rounded-xl p-4">
           <div className="w-full flex justify-center items-center h-50">

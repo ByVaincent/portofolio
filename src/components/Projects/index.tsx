@@ -50,6 +50,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
               "A simple frontend exercise using HTML and CSS, where I recreated the TripAdvisor website."
             }
             link={"https://precious-pastelito-540861.netlify.app/"}
+            moreClass="h-full"
           />
         </div>
       </div>
