@@ -1,5 +1,6 @@
 import type { ReactElement } from "react";
 import "./Card.css";
+import { FiAlertTriangle } from "react-icons/fi";
 interface CardProps {
   imgSrc: string;
   title: string;
@@ -7,6 +8,7 @@ interface CardProps {
   text: string;
   link: string;
   moreClass?: string;
+  noResp?: boolean;
 }
 
 const Card = ({
@@ -16,6 +18,7 @@ const Card = ({
   text,
   link,
   moreClass,
+  noResp,
 }: CardProps): ReactElement => {
   return (
     <div className={"w-full sm:w-1/2 md:w-1/3 px-2 mb-5" + moreClass}>
@@ -30,6 +33,12 @@ const Card = ({
           </div>
           <h3>{title}</h3>
           <h4>{tech}</h4>
+          {noResp && (
+            <div className="flex gap-2 color items-center mb-2 text-orange-400">
+              <FiAlertTriangle />
+              <h5>No responsive</h5>
+            </div>
+          )}
           <p>{text}</p>
         </div>
       </a>

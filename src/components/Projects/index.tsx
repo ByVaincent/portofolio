@@ -41,6 +41,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
               "I had the pleasure of being Lead Dev, in addition to frontend developer, on this team project for the end of my training. Merges, code reviews, and daily stand-ups were part of my daily routine during these two weeks of development. The result: an MVP enabling the training organization Le Réacteur to create and offer quizzes to their students completely autonomously."
             }
             link={"https://quizmeup-vincent.netlify.app/"}
+            noResp
           />
           <Card
             imgSrc={fakeTripLogo}
