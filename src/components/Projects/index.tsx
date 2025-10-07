@@ -6,6 +6,8 @@ import marvelLogo from "../../../public/marvel.png";
 import quizMeUpLogo from "../../../public/logo-quizzmeup.png";
 import fakeTripLogo from "../../../public/fake-trip.png";
 import livNLogo from "../../../public/logo-liv-n.png";
+import toDoList from "../../../public/toDoList.png";
+import timesTableGames from "../../../public/timesTableGame.png";
 
 interface ProjectsProps {}
 
@@ -52,6 +54,22 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
             }
             link={"https://precious-pastelito-540861.netlify.app/"}
             moreClass="h-full"
+          />
+          <Card
+            imgSrc={toDoList}
+            title={"To-do list"}
+            tech={"React - Node.js"}
+            text={
+              "My very first React app: a to-do list with simple authentication."
+            }
+            link={"https://todolist-0h0o.onrender.com/"}
+          />
+          <Card
+            imgSrc={timesTableGames}
+            title={"Times table games"}
+            tech={"React"}
+            text={"An old personal project made with vanilla JS, HTML, and CSS"}
+            link={"https://jeux-tables-de-multiplication.onrender.com"}
           />
         </div>
       </div>
