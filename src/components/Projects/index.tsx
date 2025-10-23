@@ -20,7 +20,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
           <Card
             imgSrc={livNLogo}
             title={"Mobile app Liv-n frontend"}
-            tech={"React native - Expo Go"}
+            tech={"React native - Expo"}
             text={
               "In charge of the mobile app’s frontend development just a few weeks into my internship! A challenge I truly enjoy, pushing me to give the best of myself. The app will be available soon."
             }
