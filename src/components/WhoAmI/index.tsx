@@ -20,11 +20,13 @@ import bootstapLogo from "../../assets/logos/logo-bootstrap.svg";
 import tailwindcssLogo from "../../assets/logos/logo-tailwind.svg";
 import figmaLogo from "../../assets/logos/logo-figma.svg";
 
-interface WhoAmIProps {}
+interface WhoAmIProps {
+  isFirst?: boolean;
+}
 
-const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((_props, ref) => {
+const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>(({ isFirst }, ref) => {
   return (
-    <Section classSup="w-full" id="whoami" ref={ref}>
+    <Section classSup="w-full" id="whoami" ref={ref} isFirst={isFirst}>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

@@ -47,7 +47,7 @@ function App() {
       />
 
       <main className="max-w-4xl mx-auto">
-        <WhoAmI ref={whoAmIRef} />
+        <WhoAmI ref={whoAmIRef} isFirst />
         <Technologies ref={technologiesRef} />
         <Projects ref={projectsRef} />
         <SoftSkills ref={softSkillsRef} />

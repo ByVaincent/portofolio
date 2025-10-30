@@ -7,11 +7,12 @@ const Section = forwardRef<
     children: React.ReactNode;
     classSup: string;
     id: string;
+    isFirst?: boolean;
   }
->(({ children, classSup, id }, ref) => {
+>(({ children, classSup, id, isFirst }, ref) => {
   return (
     <motion.section
-      className={"mt-10 " + classSup}
+      className={`${isFirst ? "" : "mt-24"} ${classSup}`}
       id={id}
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
