@@ -4,21 +4,6 @@ import { forwardRef } from "react";
 import { motion } from "framer-motion";
 import linkedin from "../../assets/logos/linkedin_logo.svg";
 import github from "../../assets/logos/git_hub_logo_white.png";
-import jsLogo from "../../assets/logos/js_logo.svg";
-import tsLogo from "../../assets/logos/ts_logo.svg";
-import reactLogo from "../../assets/logos/react_logo.svg";
-import reactNativeLogo from "../../assets/logos/reactnative_logo.svg";
-import nodeLogo from "../../assets/logos/nodejs_logo.svg";
-import mongoDbLogo from "../../assets/logos/mongodb_icon.svg";
-import phpLogo from "../../assets/logos/php.svg";
-import cilogo from "../../assets/logos/codeIgniter.svg";
-import htmlLogo from "../../assets/logos/html5_logo.svg";
-import cssLogo from "../../assets/logos/Css3logo_2.svg";
-import gitLogo from "../../assets/logos/git.svg";
-import dockerLogo from "../../assets/logos/logo-docker.svg";
-import bootstapLogo from "../../assets/logos/logo-bootstrap.svg";
-import tailwindcssLogo from "../../assets/logos/logo-tailwind.svg";
-import figmaLogo from "../../assets/logos/logo-figma.svg";
 
 interface WhoAmIProps {
   isFirst?: boolean;
