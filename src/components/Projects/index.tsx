@@ -2,12 +2,12 @@ import { forwardRef } from "react";
 import "./Projects.css";
 import Section from "../ui/Section";
 import Card from "../ui/Card/Card";
-import marvelLogo from "../../../public/marvel.png";
-import quizMeUpLogo from "../../../public/logo-quizzmeup.png";
-import fakeTripLogo from "../../../public/fake-trip.png";
-import livNLogo from "../../../public/logo-liv-n.png";
-import toDoList from "../../../public/toDoList.png";
-import timesTableGames from "../../../public/timesTableGame.png";
+import marvelLogo from "../../assets/images/marvel.png";
+import quizMeUpLogo from "../../assets/images/logo-quizzmeup.png";
+import fakeTripLogo from "../../assets/images/fake-trip.png";
+import livNLogo from "../../assets/images/logo-liv-n.png";
+import toDoList from "../../assets/images/toDoList.png";
+import timesTableGames from "../../assets/images/timesTableGame.png";
 
 interface ProjectsProps {}
 
