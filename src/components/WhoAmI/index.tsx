@@ -101,7 +101,7 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((_props, ref) => {
           relationships.
         </p>
 
-        <div className="flex flex-wrap mt-5 gap-5 justify-around">
+        {/* <div className="flex flex-wrap mt-5 gap-5 justify-around">
           <div className="w-20 aspect-square flex flex-col gap-1 ">
             <img src={jsLogo} alt="" className="w-full" />
             <p className="text-center text-xs ">Javascript</p>
@@ -170,7 +170,7 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((_props, ref) => {
             <img src={figmaLogo} alt="" className="w-full aspect-square" />
             <p className="text-center text-xs ">Figma</p>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </Section>
   );

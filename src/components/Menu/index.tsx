@@ -1,22 +1,24 @@
 import React from "react";
 import "./Menu.css";
 
-interface MenuProps {
+export type MenuProps = {
   isMenuOpen: boolean;
   setIsMenuOpen: (open: boolean) => void;
   scrollToSection: (ref: React.RefObject<HTMLDivElement | null>) => void;
   whoAmIRef: React.RefObject<HTMLDivElement | null>;
+  technologiesRef: React.RefObject<HTMLDivElement | null>;
   projectsRef: React.RefObject<HTMLDivElement | null>;
   softSkillsRef: React.RefObject<HTMLDivElement | null>;
   aboutMeRef: React.RefObject<HTMLDivElement | null>;
   docsRef: React.RefObject<HTMLDivElement | null>;
-}
+};
 
 const Menu: React.FC<MenuProps> = ({
   isMenuOpen,
   setIsMenuOpen,
   scrollToSection,
   whoAmIRef,
+  technologiesRef,
   projectsRef,
   softSkillsRef,
   aboutMeRef,
@@ -45,6 +47,14 @@ const Menu: React.FC<MenuProps> = ({
                   className="active text-white font-bold w-full text-left py-1 px-0 hover:text-white focus:text-white"
                 >
                   Who I am
+                </button>
+              </li>
+              <li className="w-full">
+                <button
+                  onClick={() => scrollToSection(technologiesRef)}
+                  className="text-[#bfc6e6] w-full text-left py-1 px-0 hover:text-white focus:text-white"
+                >
+                  Technologies
                 </button>
               </li>
               <li className="w-full">

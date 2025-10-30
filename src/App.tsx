@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import SoftSkills from "./components/SoftSkills";
 import AboutMe from "./components/AboutMe";
 import Docs from "./components/Docs";
+import Technologies from "./components/Technologies";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +15,7 @@ function App() {
   const softSkillsRef = useRef<HTMLDivElement>(null);
   const aboutMeRef = useRef<HTMLDivElement>(null);
   const docsRef = useRef<HTMLDivElement>(null);
+  const technologiesRef = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
@@ -37,6 +39,7 @@ function App() {
         setIsMenuOpen={setIsMenuOpen}
         scrollToSection={scrollToSection}
         whoAmIRef={whoAmIRef}
+        technologiesRef={technologiesRef}
         projectsRef={projectsRef}
         softSkillsRef={softSkillsRef}
         aboutMeRef={aboutMeRef}
@@ -45,6 +48,7 @@ function App() {
 
       <main className="max-w-4xl mx-auto">
         <WhoAmI ref={whoAmIRef} />
+        <Technologies ref={technologiesRef} />
         <Projects ref={projectsRef} />
         <SoftSkills ref={softSkillsRef} />
         <AboutMe ref={aboutMeRef} />
