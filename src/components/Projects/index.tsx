@@ -24,7 +24,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
             text={
               "In charge of the mobile app’s frontend development just a few weeks into my internship! A challenge I truly enjoy, pushing me to give the best of myself. The app will be available soon."
             }
-            link={"https://www.liv-n.com/"}
+            link={"https://youtube.com/shorts/cQFP2wcvvGk"}
           />
           <Card
             imgSrc={marvelLogo}
