@@ -15,6 +15,10 @@ import cilogo from "../../../public/codeIgniter.svg";
 import htmlLogo from "../../../public/html5_logo.svg";
 import cssLogo from "../../../public/Css3logo_2.svg";
 import gitLogo from "../../../public/git.svg";
+import dockerLogo from "../../../public/logo-docker.svg";
+import bootstapLogo from "../../../public/logo-bootstrap.svg";
+import tailwindcssLogo from "../../../public/logo-tailwind.svg";
+import figmaLogo from "../../../public/logo-figma.svg";
 
 interface WhoAmIProps {}
 
@@ -97,39 +101,74 @@ const WhoAmI = forwardRef<HTMLDivElement, WhoAmIProps>((_props, ref) => {
           relationships.
         </p>
 
-        <div className="flex flex-wrap mt-5">
-          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
-            <img src={jsLogo} alt="" className="w-full p-2" />
+        <div className="flex flex-wrap mt-5 gap-5 justify-around">
+          <div className="w-20 aspect-square flex flex-col gap-1 ">
+            <img src={jsLogo} alt="" className="w-full" />
+            <p className="text-center text-xs ">Javascript</p>
           </div>
-          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
-            <img src={tsLogo} alt="" className="w-full p-2" />
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={tsLogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">Typescript</p>
           </div>
-          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
-            <img src={reactLogo} alt="" className="w-full p-2" />
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={reactLogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">React</p>
           </div>
-          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
-            <img src={reactNativeLogo} alt="" className="w-full p-2" />
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img
+              src={reactNativeLogo}
+              alt=""
+              className="w-full aspect-square"
+            />
+            <p className="text-center text-xs ">React Native</p>
           </div>
-          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
-            <img src={nodeLogo} alt="" className="w-full p-2" />
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={nodeLogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">Node.js</p>
           </div>
-          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
-            <img src={phpLogo} alt="" className="w-full p-2" />
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={phpLogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">PHP</p>
           </div>
-          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
-            <img src={cilogo} alt="" className="w-full p-2" />
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={cilogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">CodeIgniter</p>
           </div>
-          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
-            <img src={mongoDbLogo} alt="" className="w-full p-2" />
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={mongoDbLogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">Mongo DB</p>
           </div>
-          <div className="w-1/5 sm:w-1/11 flex justify-between items-center">
-            <img src={htmlLogo} alt="" className="w-full p-2" />
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img
+              src={tailwindcssLogo}
+              alt=""
+              className="w-full aspect-square"
+            />
+            <p className="text-center text-xs ">Tailwind CSS</p>
           </div>
-          <div className="w-1/6 sm:w-1/13 flex justify-between items-center">
-            <img src={cssLogo} alt="" className="w-full p-2" />
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={bootstapLogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">Bootstrap</p>
           </div>
-          <div className="w-1/6 sm:w-1/11 flex justify-between items-center">
-            <img src={gitLogo} alt="" className="w-full p-2" />
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={htmlLogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">Html 5</p>
+          </div>
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={cssLogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">Css 3</p>
+          </div>
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={gitLogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">Git</p>
+          </div>
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={dockerLogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">Docker</p>
+          </div>
+          <div className="w-20 aspect-square flex flex-col gap-1">
+            <img src={figmaLogo} alt="" className="w-full aspect-square" />
+            <p className="text-center text-xs ">Figma</p>
           </div>
         </div>
       </motion.div>
