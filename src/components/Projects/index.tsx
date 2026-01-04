@@ -4,9 +4,9 @@ import Section from "../ui/Section";
 import Card from "../ui/Card/Card";
 import marvelLogo from "../../assets/images/marvel.png";
 import quizMeUpLogo from "../../assets/images/logo-quizzmeup.png";
-import fakeTripLogo from "../../assets/images/fake-trip.png";
+// import fakeTripLogo from "../../assets/images/fake-trip.png";
 import livNLogo from "../../assets/images/logo-liv-n.png";
-import toDoList from "../../assets/images/toDoList.png";
+// import toDoList from "../../assets/images/toDoList.png";
 import timesTableGames from "../../assets/images/timesTableGame.png";
 
 interface ProjectsProps {}
