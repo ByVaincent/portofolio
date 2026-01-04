@@ -45,7 +45,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
             link={"https://quizmeup-vincent.netlify.app/"}
             noResp
           />
-          <Card
+          {/* <Card
             imgSrc={fakeTripLogo}
             title={"Mobile app Liv-n frontend"}
             tech={"React native - Expo Go"}
@@ -54,8 +54,8 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
             }
             link={"https://precious-pastelito-540861.netlify.app/"}
             moreClass="h-full"
-          />
-          <Card
+          /> */}
+          {/* <Card
             imgSrc={toDoList}
             title={"To-do list"}
             tech={"React - Node.js"}
@@ -63,7 +63,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
               "My very first React app: a to-do list with simple authentication."
             }
             link={"https://todolist-0h0o.onrender.com/"}
-          />
+          /> */}
           <Card
             imgSrc={timesTableGames}
             title={"Times table games"}
