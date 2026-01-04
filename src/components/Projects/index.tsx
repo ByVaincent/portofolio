@@ -4,7 +4,7 @@ import Section from "../ui/Section";
 import Card from "../ui/Card/Card";
 import marvelLogo from "../../assets/images/marvel.png";
 import quizMeUpLogo from "../../assets/images/logo-quizzmeup.png";
-// import fakeTripLogo from "../../assets/images/fake-trip.png";
+import fakeTripLogo from "../../assets/images/fake-trip.png";
 import livNLogo from "../../assets/images/logo-liv-n.png";
 // import toDoList from "../../assets/images/toDoList.png";
 import timesTableGames from "../../assets/images/timesTableGame.png";
@@ -45,7 +45,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
             link={"https://quizmeup-vincent.netlify.app/"}
             noResp
           />
-          {/* <Card
+          <Card
             imgSrc={fakeTripLogo}
             title={"Mobile app Liv-n frontend"}
             tech={"React native - Expo Go"}
@@ -54,7 +54,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>((_props, ref) => {
             }
             link={"https://precious-pastelito-540861.netlify.app/"}
             moreClass="h-full"
-          /> */}
+          />
           {/* <Card
             imgSrc={toDoList}
             title={"To-do list"}
